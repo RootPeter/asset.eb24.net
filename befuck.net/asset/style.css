@@ -1,0 +1,99 @@
+@import url("style-base.css");
+::-webkit-input-placeholder {color: #ccc;}
+:-moz-placeholder {color: #ccc;}
+::-moz-placeholder {color: #ccc;}
+:-ms-input-placeholder {color: #ccc;}
+body {color: #a0a0a0; background: #262322; text-shadow: 0 -1px 0 #000;}
+a {color: #ccac4a; transition: 0.3s all ease;}
+a:hover {color: #ffd860;}
+/* header */
+div.header {height: 110px;}
+div.logo {top: 35px;}
+/* search field */
+div.search {background: #000; border-color: #363636; top: 45px; box-shadow: 1px 0 3px #000;}
+div.search input.sf {color: #ccc;}
+div.search button.sb:after {color: #ffd860;}
+.autocomplete-suggestions {border-color: #363636; background:#000;}
+.autocomplete-suggestion {color: #ddd;}
+.autocomplete-selected {background: #303030; color: #fff;}
+.autocomplete-suggestions strong {color: #ffd860;}
+/* lang selector */
+#lngselect {background:url("../static.webclicks24.com/images/select-arrow-w.png") no-repeat 100% 50%;}
+#lngselect strong {color: #fff;}
+#lngselect.down:after {border-bottom-color: #363636;}
+#lngselect ul {background-color: #000; border-color: #363636;}
+/* headers */
+h1,h2,div.h {color: #ddd; background: #000; border-bottom: 1px solid #363636;}
+h1,h2 {font-size: 20px; font-weight: 400; padding: 0 10px;}
+div.h h1, div.h h2 {border: none; background: none;}
+div.tbookshare {right: -5px;}
+/* buttons */
+div.sort a, div.durgrp a, div.timerange a, div.pages a {
+	border: 1px solid #000;
+	background: #3e3a39; /* Old browsers */
+	background: -moz-linear-gradient(top,  #3e3a39 0%, #040404 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3e3a39), color-stop(100%,#040404)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #3e3a39 0%,#040404 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #3e3a39 0%,#040404 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #3e3a39 0%,#040404 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #3e3a39 0%,#040404 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e3a39', endColorstr='#040404',GradientType=0 ); /* IE6-9 */
+	box-shadow: 0 1px 2px #332f2e;
+	font-weight: bold;
+	font-size: 13px;
+}
+div.sort a:hover, div.durgrp a:hover, div.timerange a:hover, div.pages a:hover {}
+div.sort a.current, div.durgrp a.current, div.timerange a.current, div.pages a.current {background:#000; color:#fff;}
+/*div.related a {color: #b0b0b0;}
+div.related a:hover {color: #f8b208;}*/
+/* content and thumb categories */
+ul.content li, ul.tcats li, ul.relatedthumbs li {border-color: #000; background: #000; border-bottom-color: #363636;}
+ul.tcats li h3 {font-weight: bold; text-transform: capitalize;}
+ul.content li h3 {background-color: #000; border-bottom: 1px solid #202020;}
+ul.content li:hover h3 {color: #b7b7b7;}
+ul.content li span.src a {color: #a0a0a0;}
+ul.content li span.src a:hover {color: #fff;}
+ul.content li span.tl {border-top: 1px solid #202020;}
+ul.content li span.tl span {color: #888;}
+ul.content li span.tl a {}
+ul.content li span.tl a:hover {}
+ul.content li span.tl a.c {color: #ffd860;}
+ul.content li span.hdlabel {}
+/* icons */
+ul.content li h3:after, ul.content li span.add:after, ul.content li span.src:after, ul.content li span.tl:after, div.related a:after, ul.relatedthumbs li h3:after {color: #7d6b2a;}
+div.az ul li:after {display: none; color: #888;}
+div.related a:after {color: #808080; text-shadow: none;}
+/* text categories */
+div.az ul li {padding-left: 3px;}
+div.az ul li.letter {background: none; color: #ddd; border-bottom: 1px solid #000; box-shadow: 0 1px 0 #363636;}
+/* back to top button */
+#back_to_top a#back-to-top {background: #bea543;}
+/* banners */
+.ads3b {border-color: #363636; background: #000;}
+/* toplist */
+div.tradeindex div.cont div.timg img {border: 1px solid #363636; background: #000;}
+div.tradeindex div.cont div.timg a:hover img {border: 1px solid #505050;}
+
+
+
+@media all and (max-width: 1000px) {
+	h1,h2 {font-size: 20px;}
+	ul.content li, ul.tcats li, ul.relatedthumbs li, ul.content li:hover, ul.tcats li:hover, ul.relatedthumbs li:hover {border-color: #262322; box-shadow: inset 0 0 1px #ccc;}
+	div.az ul li {padding-left: 15px;}
+	div.az ul li:after {display: block;}
+}
+@media all and (max-width: 767px) {
+	div.header {height: 100px; background: none;}
+	div.search {top:auto;}
+	div.logo {top: 5px;}
+	ul.content li a.report {color: #a0a0a0;}
+	#lngselect {top: 10px;}
+	ul.topmenu {right: 50px; top: 17px;}
+}
+@media all and (max-width: 567px) {
+	ul.topmenu li a {font-size: 11px;}
+}
+@media all and (max-width: 479px) {
+	h1,h2 {font-size: 16px;}
+}
+

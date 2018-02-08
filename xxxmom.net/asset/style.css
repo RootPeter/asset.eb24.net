@@ -1,0 +1,77 @@
+@import url("style-base.css");
+::-webkit-input-placeholder {color: #666;}
+:-moz-placeholder {color: #666;}
+::-moz-placeholder {color: #666;}
+:-ms-input-placeholder {color: #666;}
+body {color: #444; background: url("images/bg.png") top left repeat-x #e6e2d2;}
+a {color: #83390d;}
+a:hover {color: #dc5807;}
+div.header {height: 120px;}
+div.logo {top: 18px;}
+ul.topmenu {left: auto; right: 0;}
+ul.topmenu li a {color: #fff;}
+ul.topmenu li a:hover {color: #fce8c5;}
+/* search field */
+div.search {background: #f5f3ed; border-color: #603525; border-radius: 5px; top: 45px;}
+div.search input.sf {color: #222;}
+div.search button.sb:after {color: #83390d;}
+.autocomplete-suggestions {border-color: #603525; background:#f5f3ed;}
+.autocomplete-suggestion {color: #444;}
+.autocomplete-selected {background: #dacec5; color: #000;}
+.autocomplete-suggestions strong {color: #c32d06;}
+/* lang selector */
+#lngselect {background:url("../static.webclicks24.com/images/select-arrow-w.png") no-repeat 100% 50%;}
+#lngselect strong {color: #fff;}
+#lngselect.down:after {border-bottom-color: #886453;}
+#lngselect ul {background-color: #572c23; border-color: #886453;}
+#lngselect ul li a {color: #fff;}
+#lngselect ul li a:hover {color: #fce8c5;}
+/* headers */
+h1,h2,div.h {color: #8f5041; text-shadow: 0px 1px 0px #fff; background: #f4f2eb;}
+h1,h2 {font-size: 20px; font-weight: 400; padding: 0 10px;}
+div.h h1, div.h h2 {background: none; border: none;}
+div.tbookshare {right: -5px;}
+/* buttons */
+div.sort a, div.durgrp a, div.timerange a, div.pages a {background: #ece8d8; border: 1px solid #dacec5;}
+div.sort a:hover, div.durgrp a:hover, div.timerange a:hover, div.pages a:hover {border: 1px solid #83390d; color: #222;}
+div.sort a.current, div.durgrp a.current, div.timerange a.current, div.pages a.current {background: #fff; color: #222; border: 1px solid #dacec5;}
+/* content and thumb categories */
+ul.content li, ul.tcats li {border-color: #dacec5; background:url("images/libg1.png") top left repeat-x #f6f4ef;}
+ul.content li h3 {color: #222; background: #f5f3ee; border-bottom: 1px solid #eeebe4;}
+ul.content li span.tl {border-top: 1px solid #eeebe4;}
+/* icons */
+ul.content li h3:after, ul.content li span.add:after, ul.content li span.src:after, ul.content li span.tl:after, div.related a:after {color: #dcb192;}
+div.az ul li:after, div.related a:after {color: #c09d82;}
+/* text categories */
+div.az, div.tradeindex {
+	padding: 5px;
+	background:url("images/libg1.png") top left repeat-x #f6f4ef;
+	border:1px solid #dacec5;
+}
+div.az li > a {color: #000;}
+div.az li > a:hover {color:#dc5807; text-decoration:underline;}
+div.az li > span {color: #666;}
+div.az ul li.letter {background: #fdfbf3; border-bottom: 1px solid #e3e0d7; color: #8f5041;}
+/* back to top button */
+#back_to_top a#back-to-top {background: #83390d;}
+/* banners */
+.ads3b {border-color: #dacec5; background:url("images/libg1.png") top left repeat-x #f6f4ef;}
+ul.globaltop li {border-bottom: 1px dotted #e6e2d2;}
+
+
+
+@media all and (max-width: 1000px) {
+	h1,h2 {font-size: 20px;}
+	ul.content li, ul.tcats li, ul.content li:hover, ul.tcats li:hover {border-color: #e6e2d2; box-shadow: inset 0 0 1px #a28d7b;}
+}
+@media all and (max-width: 767px) {
+	div.header {height: 115px; padding-top: 55px;}
+	div.search {top:auto;}
+	div.logo {top: 5px;}
+	ul.content li h3 {color: #222;}
+	ul.content li a.report {color: #c09c82;}
+}
+@media all and (max-width: 479px) {
+	h1,h2 {font-size: 16px;}
+}
+

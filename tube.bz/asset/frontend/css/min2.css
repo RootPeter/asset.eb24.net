@@ -1,0 +1,1230 @@
+
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}footer,header{display:block}a{background-color:transparent}a:active,a:hover{outline:0}b,strong{font-weight:bold}h1{font-size:2em;margin:0.67em 0}img{border:0}/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */@media print{*,*:before,*:after{background:transparent !important;color:#000 !important;-webkit-box-shadow:none !important;box-shadow:none !important;text-shadow:none !important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}a[href^="#"]:after{content:""}img{page-break-inside:avoid}img{max-width:100% !important}h2{orphans:3;widows:3}h2{page-break-after:avoid}.navbar{display:none}}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}img{vertical-align:middle}h1,h2{font-family:inherit;font-weight:500;line-height:1.1;color:inherit}h1,h2{margin-top:20px;margin-bottom:10px}h1{font-size:36px}h2{font-size:30px}.text-danger{color:#a94442}ul{margin-top:0;margin-bottom:10px}.row{margin-left:-15px;margin-right:-15px}.col-xs-3, .col-sm-3, .col-xs-9{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-3, .col-xs-9{float:left}.col-xs-9{width:75%}.col-xs-3{width:25%}@media (min-width:768px){.col-sm-3{float:left}.col-sm-3{width:25%}}.form-group{margin-bottom:15px}.form-horizontal .form-group{margin-left:-15px;margin-right:-15px}.nav{margin-bottom:0;padding-left:0;list-style:none}.nav>li{position:relative;display:block}.nav>li>a{position:relative;display:block;padding:10px 15px}.nav>li>a:hover,.nav>li>a:focus{text-decoration:none;background-color:#eee}.navbar{position:relative;min-height:50px;margin-bottom:20px;border:1px solid transparent}@media (min-width:768px){.navbar{border-radius:4px}}.navbar-default{background-color:#f8f8f8;border-color:#e7e7e7}.clearfix:before,.clearfix:after,.row:before,.row:after,.form-horizontal .form-group:before,.form-horizontal .form-group:after,.nav:before,.nav:after,.navbar:before,.navbar:after{content:" ";display:table}.clearfix:after,.row:after,.form-horizontal .form-group:after,.nav:after,.navbar:after{clear:both}.pull-left{float:left !important}@-ms-viewport{width:device-width}
+/*
+ *  Document   : plugins.css
+ *  Author     : Various
+ *  Description: Stylesheet of various plugins in one file for consistency.
+ *  Most styles are altered to match template's style. Feel free to remove the
+ *  plugin styles you won't use (along with their plugins in js/plugins.js)
+ *  or include them separately if you are going to use them only in few pages
+ *  of your project. I've included this file along with js/plugins.js in all pages
+ *  to make all the plugins available everywhere with the minimum cost (few http requests).
+ *
+ *  Includes (with shortcode):
+ *      (#01fas) Font Awesome
+ *      (#02gps) Glyphicons PRO
+ *      (#03fcs) FullCalendar
+ *      (#04djs) Dropzone.js
+ *      (#05chs) Chosen
+ *      (#06dps) Datepicker for Bootstrap
+ *      (#07bcs) Bootstrap Colorpicker
+ *      (#08prs) PRISM.js
+ *      (#09mps) Magnific Popup CSS
+ *      (#10dts) Datatables
+ *      (#11eps) Easy Pie Chart
+ *      (#12cas) CSS3 ANIMATION CHEAT SHEET
+ *      (#13tps) Bootstrap Timepicker
+ *      (#14tis) Jquery Tags Input
+ *      (#15sbs) Slider for Bootstrap
+ *      (#16nps) NProgress
+ *      (#17s2s) Select2
+ */
+
+/*
+=================================================================
+(#01fas)  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+
+License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+=================================================================
+*/
+@font-face{font-family:'FontAwesome';src:url('fonts/fontawesome/fontawesome-webfont.eot?v=4.7.0');src:url('fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),url('fonts/fontawesome/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),url('fonts/fontawesome/fontawesome-webfont.woff?v=4.7.0') format('woff'),url('fonts/fontawesome/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),url('fonts/fontawesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-fw{width:1.28571429em;text-align:center}.pull-left{float:left}.fa-heart:before{content:"\f004"}.fa-bars:before{content:"\f0c9"}
+
+/*
+=================================================================
+(#02gps) Glyphicons PRO
+
+Project:  GLYPHICONS
+Author:   Jan Kovarik - www.glyphicons.com
+Twitter:  @jankovarik
+=================================================================
+*/
+@font-face{font-family:'Glyphicons Regular';src:url('fonts/glyphicons.pro/glyphicons-regular.eot');src:url('fonts/glyphicons.pro/glyphicons-regular.eot?#iefix') format('embedded-opentype'),url('fonts/glyphicons.pro/glyphicons-regular.woff') format('woff'),url('fonts/glyphicons.pro/glyphicons-regular.ttf') format('truetype'),url('fonts/glyphicons.pro/glyphicons-regular.svg#glyphiconsregular') format('svg')}@font-face{font-family:'Glyphicons Halflings Regular';src:url('fonts/glyphicons.halflings.pro/glyphicons-halflings-regular.eot');src:url('fonts/glyphicons.halflings.pro/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),url('fonts/glyphicons.halflings.pro/glyphicons-halflings-regular.woff') format('woff'),url('fonts/glyphicons.halflings.pro/glyphicons-halflings-regular.ttf') format('truetype'),url('fonts/glyphicons.halflings.pro/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg')}@font-face{font-family:'Glyphicons Social Regular';src:url('fonts/glyphicons.social.pro/glyphicons-social-regular.eot');src:url('fonts/glyphicons.social.pro/glyphicons-social-regular.eot?#iefix') format('embedded-opentype'),url('fonts/glyphicons.social.pro/glyphicons-social-regular.woff') format('woff'),url('fonts/glyphicons.social.pro/glyphicons-social-regular.ttf') format('truetype'),url('fonts/glyphicons.social.pro/glyphicons-social-regular.svg#glyphicons_socialregular') format('svg')}@font-face{font-family:'Glyphicons Filetypes Regular';src:url('fonts/glyphicons.filetypes.pro/glyphicons-filetypes-regular.eot');src:url('fonts/glyphicons.filetypes.pro/glyphicons-filetypes-regular.eot?#iefix') format('embedded-opentype'),url('fonts/glyphicons.filetypes.pro/glyphicons-filetypes-regular.woff') format('woff'),url('fonts/glyphicons.filetypes.pro/glyphicons-filetypes-regular.ttf') format('truetype'),url('fonts/glyphicons.filetypes.pro/glyphicons-filetypes-regular.svg#glyphicons_filetypesregular') format('svg')}.gi{display:inline-block;font-style:normal;font-weight:400;line-height:.8;vertical-align:middle;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.gi{font-family:'Glyphicons Regular'}.gi-home:before{content:"\E021"}.gi-flash:before{content:"\E242"}
+
+/*
+=================================================================
+(#03fcs) FullCalendar
+
+Docs & License: http://arshaw.com/fullcalendar/
+(c) 2013 Adam Shaw
+=================================================================
+*/
+
+
+/* Colors
+--------------------------------------------------------------------------------------------------*/
+
+
+/* Icons (inline elements with styled text that mock arrow icons)
+--------------------------------------------------------------------------------------------------*/
+
+/*
+Acceptable font-family overrides for individual icons:
+        "Arial", sans-serif
+        "Times New Roman", serif
+
+NOTE: use percentage font sizes or else old IE chokes
+*/
+
+
+/* Buttons (styled <button> tags, normalized to work cross-browser)
+--------------------------------------------------------------------------------------------------*/
+
+/* Firefox has an annoying inner border */
+
+/* icons in buttons */
+
+/*
+  button states
+  borrowed from twitter bootstrap (http://twitter.github.com/bootstrap/)
+*/
+
+
+/* Buttons Groups
+--------------------------------------------------------------------------------------------------*/
+
+/*
+every button that is not first in a button group should scootch over one pixel and cover the
+previous button's border...
+*/
+
+
+/* Popover
+--------------------------------------------------------------------------------------------------*/
+
+/* unthemed */
+
+/* jqui themed */
+
+
+/* Misc Reusable Components
+--------------------------------------------------------------------------------------------------*/
+
+
+/* Tables
+--------------------------------------------------------------------------------------------------*/
+
+/* Internal Nav Links
+--------------------------------------------------------------------------------------------------*/
+
+
+/* Fake Table Rows
+--------------------------------------------------------------------------------------------------*/
+
+
+/* Day Row (used within the header and the DayGrid)
+--------------------------------------------------------------------------------------------------*/
+
+/* highlighting cells & background event skeleton */
+
+/*
+row content (which contains day/week numbers and events) as well as "helper" (which contains
+temporary rendered events).
+*/
+
+
+/* Scrolling Container
+--------------------------------------------------------------------------------------------------*/
+
+
+/* Global Event Styles
+--------------------------------------------------------------------------------------------------*/
+
+/* overpower some of bootstrap's and jqui's styles on <a> tags */
+
+/* resizer (cursor AND touch devices) */
+
+/* resizer (touch devices) */
+
+/* hit area */
+
+/* Event Selection (only for touch devices)
+--------------------------------------------------------------------------------------------------*/
+
+/* Horizontal Events
+--------------------------------------------------------------------------------------------------*/
+
+/* events that are continuing to/from another week. kill rounded corners and butt up against edge */
+
+/* bigger touch area when selected */
+
+/* resizer (cursor AND touch devices) */
+
+/* left resizer  */
+
+/* right resizer */
+
+/* resizer (mouse devices) */
+
+/* resizer (touch devices) */
+
+/* left resizer  */
+
+/* right resizer */
+
+
+/* DayGrid events
+----------------------------------------------------------------------------------------------------
+We use the full "fc-day-grid-event" class instead of using descendants because the event won't
+be a descendant of the grid when it is being dragged.
+*/
+
+/* resizer (cursor devices) */
+
+/* left resizer  */
+
+/* right resizer */
+
+
+/* Event Limiting
+--------------------------------------------------------------------------------------------------*/
+
+/* "more" link that represents hidden events */
+
+/* popover that appears when "more" link is clicked */
+
+/* Now Indicator
+--------------------------------------------------------------------------------------------------*/
+
+/* Utilities
+--------------------------------------------------------------------------------------------------*/
+
+/* Toolbar
+--------------------------------------------------------------------------------------------------*/
+
+/* the things within each left/right/center section */
+
+/* the first thing within each left/center/right section */
+
+/* title text */
+
+/* button layering (for border precedence) */
+
+
+/* View Structure
+--------------------------------------------------------------------------------------------------*/
+
+/* undo twitter bootstrap's box-sizing rules. normalizes positioning techniques */
+/* don't do this for the toolbar because we'll want bootstrap to style those buttons as some pt */
+
+/* BasicView
+--------------------------------------------------------------------------------------------------*/
+
+/* day row structure */
+
+/* a "rigid" row will take up a constant amount of height because content-skeleton is absolute */
+
+/* week and day number styling */
+
+/* when week/day number have own column */
+
+/* AgendaView all-day area
+--------------------------------------------------------------------------------------------------*/
+
+/* TimeGrid axis running down the side (for both the all-day area and the slot area)
+--------------------------------------------------------------------------------------------------*/
+
+
+/* TimeGrid Structure
+--------------------------------------------------------------------------------------------------*/
+
+/* divs within a cell within the fc-content-skeleton */
+
+
+/* TimeGrid Slats (lines that run horizontally)
+--------------------------------------------------------------------------------------------------*/
+
+
+/* TimeGrid Highlighting Slots
+--------------------------------------------------------------------------------------------------*/
+
+
+/* TimeGrid Event Containment
+--------------------------------------------------------------------------------------------------*/
+
+/* Generic Vertical Event
+--------------------------------------------------------------------------------------------------*/
+
+
+/* TimeGrid Event Styling
+----------------------------------------------------------------------------------------------------
+We use the full "fc-time-grid-event" class instead of using descendants because the event won't
+be a descendant of the grid when it is being dragged.
+*/
+
+/* short mode, where time and title are on the same line */
+
+/* resizer (cursor device) */
+
+/* resizer (touch device) */
+
+
+/* Now Indicator
+--------------------------------------------------------------------------------------------------*/
+
+/* arrow on axis */
+
+
+
+/* List View
+--------------------------------------------------------------------------------------------------*/
+
+/* possibly reusable */
+
+/* view wrapper */
+
+/* table resets */
+
+/* day headings with the list */
+
+/* event list items */
+
+/* make the dot closer to the event title */
+
+/* message when no events */
+
+/* Custom */
+
+/* Small devices, Tablets (>768px) */
+
+/*
+=================================================================
+(#04djs) Dropzone.js
+
+MIT License
+=================================================================
+*/
+.dropzone .dz-preview .dz-details .dz-filename:not(:hover) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.dropzone .dz-preview .dz-details .dz-filename:not(:hover) span {
+    border: 1px solid transparent;
+}
+
+/*
+=================================================================
+(#05chs) Chosen
+
+MIT License
+=================================================================
+*/
+
+/* @group Base */
+
+/* @end */
+/* @group Single Chosen */
+
+/* @end */
+/* @group Results */
+
+/* @end */
+/* @group Multi Chosen */
+
+/* @end */
+/* @group Active  */
+
+/* @end */
+/* @group Disabled Support */
+
+/* @end */
+/* @group Right to Left */
+
+/* @end */
+/* @group Retina compatibility */
+/* @end */
+
+/*
+=================================================================
+(#06dps) Datepicker for Bootstrap
+Copyright 2012 Stefan Petre
+
+Licensed under the Apache License v2.0
+http://www.apache.org/licenses/LICENSE-2.0
+=================================================================
+*/
+
+/*
+=================================================================
+(#07bcs) Bootstrap Colorpicker
+
+http://mjolnic.github.io/bootstrap-colorpicker/
+
+Originally written by (c) 2012 Stefan Petre
+Licensed under the Apache License v2.0
+http://www.apache.org/licenses/LICENSE-2.0.txt
+=================================================================
+*/
+
+/*
+=================================================================
+(#08prs) prism.js okaidia theme for JavaScript, CSS and HTML
+
+Loosely based on Monokai textmate theme by http://www.monokai.nl/
+@author ocodia
+=================================================================
+*/
+
+/* Code blocks */
+
+/* Inline code */
+
+/*
+=================================================================
+(#09mps) Magnific Popup CSS
+=================================================================
+*/
+/* Main image in popup */
+/* The shadow behind the image */
+@media screen and (max-width: 800px) and (orientation: landscape),
+screen and (max-height: 300px) {
+    /**
+       * Remove all paddings around the image on small screen
+       */
+}
+
+/*
+=================================================================
+(#10dts) Datatables
+=================================================================
+*/
+
+/*
+==============================================
+(#11eps) Easy Pie Chart
+==============================================
+*/
+
+/*
+==============================================
+(#12cas) CSS3 ANIMATION CHEAT SHEET
+
+Made by Justin Aguilar
+
+www.justinaguilar.com/animations/
+
+Questions, comments, concerns, love letters:
+justin@justinaguilar.com
+==============================================
+*/
+
+/*
+==============================================
+slideDown
+==============================================
+*/
+
+/*
+==============================================
+slideUp
+==============================================
+*/
+
+/*
+==============================================
+slideLeft
+==============================================
+*/
+
+/*
+==============================================
+slideRight
+==============================================
+*/
+
+/*
+==============================================
+slideExpandUp
+==============================================
+*/
+
+/*
+==============================================
+expandUp
+==============================================
+*/
+
+/*
+==============================================
+fadeIn
+==============================================
+*/
+
+/*
+==============================================
+expandOpen
+==============================================
+*/
+
+/*
+==============================================
+bigEntrance
+==============================================
+*/
+
+/*
+==============================================
+hatch
+==============================================
+*/
+
+/*
+==============================================
+bounce
+==============================================
+*/
+
+/*
+==============================================
+pulse
+==============================================
+*/
+
+/*
+==============================================
+floating
+==============================================
+*/
+
+/*
+==============================================
+tossing
+==============================================
+*/
+
+/*
+==============================================
+pullUp
+==============================================
+*/
+
+/*
+==============================================
+pullDown
+==============================================
+*/
+
+/*
+==============================================
+stretchLeft
+==============================================
+*/
+
+/*
+==============================================
+stretchRight
+==============================================
+*/
+
+/* Extend with more animations */
+
+/*
+==============================================
+pulseSlow
+==============================================
+*/
+
+/*
+==============================================
+floatingHor
+==============================================
+*/
+
+/*
+==============================================
+fadeInQuick
+==============================================
+*/
+
+/*
+==============================================
+fadeInQuickInv
+==============================================
+*/
+
+/*
+==============================================
+fadeIn360
+==============================================
+*/
+
+/*
+==============================================
+FadeInRight
+==============================================
+*/
+
+/*
+==============================================
+FadeInLeft
+==============================================
+*/
+
+/*
+==============================================
+(#13tps) Timepicker Component for Twitter Bootstrap
+
+Copyright 2013 Joris de Wit
+
+Contributors https://github.com/jdewit/bootstrap-timepicker/graphs/contributors
+==============================================
+*/
+
+/*
+==============================================
+(#14tis) Jquery Tags Input
+==============================================
+*/
+
+/*
+==============================================
+(#15sbs) Slider for Bootstrap
+
+Copyright 2012 Stefan Petre
+Licensed under the Apache License v2.0
+http://www.apache.org/licenses/LICENSE-2.0
+==============================================
+*/
+
+/*
+==============================================
+(#16nps) NProgress (c) 2013, Rico Sta. Cruz
+
+http://ricostacruz.com/nprogress
+==============================================
+*/
+
+/* Make clicks pass-through */
+
+/* Fancy blur effect */
+
+/* Remove these to get rid of the spinner */
+
+
+/*
+==============================================
+(#17s2s) Select2
+==============================================
+*/
+/*
+ *  Document   : main.css
+ *  Author     : pixelcave
+ *  Description: The main stylesheet of the template
+ *
+ *  Structure (with shortcodes):
+ *      (#m01mls) MAIN LAYOUT
+ *      (#m02hds) HEADER
+ *      (#m03sns) SIDEBAR/NAVIGATION
+ *      (#m04mcs) MAIN CONTENT
+ *      (#m05pgs) PAGES
+ *      (#m06bos) BOOTSTRAP OVERWRITE/EXTEND STYLES
+ *      (#m07hes) HELPERS
+ *      (#m08ths) THEMES
+ *      (#m09res) RESPONSIVE
+ *      (#m10rts) RETINA
+ *      (#m11prs) PRINT
+ */
+
+/*
+=================================================================
+(#m01mls) MAIN LAYOUT
+=================================================================
+*/
+
+/* Include Open Sans font from Google Web Fonts */
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,600italic,700,700italic');
+
+/* Preloader */
+
+/* Main Structure */
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #394263;
+    font-size: 13px;
+    background-color: #222222;
+}
+
+#page-container,
+#page-content + footer {
+    min-width: 320px;
+}
+
+#page-container {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    overflow-x: hidden;
+    -webkit-transition: background-color 0.2s ease-out, opacity 0.3s ease-out;
+    transition: background-color 0.2s ease-out, opacity 0.3s ease-out;
+}
+
+#page-container {
+    background-color: #394263;
+}
+
+#page-content {
+    padding: 10px 5px 1px;
+    background-color: #eaedf1;
+}
+
+#page-content + footer {
+    padding: 9px 10px;
+    font-size: 11px;
+    background-color: #ffffff;
+    border-top: 1px solid #dbe1e8;
+}
+
+/* Fixed Header */
+
+/* Sidebar + Static Header */
+
+/* Sidebar + Fixed Header */
+
+/* Alternative Sidebar + Static Header */
+
+/* Alternative Sidebar + Fixed Header */
+
+/* Fixed Footer */
+
+/*
+=================================================================
+(#m02hds) HEADER
+=================================================================
+*/
+
+header.navbar-default {
+    padding: 0;
+    margin: 0;
+    min-width: 320px;
+    border: none;
+}
+
+/* Header Nav */
+
+.nav.navbar-nav-custom {
+    float: left;
+    margin: 0;
+}
+
+.nav.navbar-nav-custom > li {
+    min-height: 50px;
+    float: left;
+}
+
+.nav.navbar-nav-custom > li > a {
+    min-width: 50px;
+    padding: 5px 7px;
+    line-height: 40px;
+    text-align: center;
+    color: #394263;
+    position: relative;
+}
+
+.nav.navbar-nav-custom > li > a .gi {
+    margin-top: -3px;
+}
+
+.nav.navbar-nav-custom > li > a:hover,
+.nav.navbar-nav-custom > li > a:focus {
+    background-color: #1bbae1;
+    color: #ffffff;
+}
+
+/* Header Search */
+
+/*
+=================================================================
+(#m03sns) SIDEBAR/NAVIGATION
+=================================================================
+*/
+
+/* Sidebar Content */
+
+/* Sidebar Brand + Title */
+
+/* Sidebar User */
+
+/* Sidebar Color Themes */
+
+/* Sidebar Chat */
+
+/* Sidebar Navigation */
+
+/* Sidebar Header */
+
+/*
+=================================================================
+(#m04mcs) MAIN CONTENT
+=================================================================
+*/
+
+/* Content Header */
+.content-header {
+    background-color: #ffffff;
+    border-top: 1px solid #eaedf1;
+    border-bottom: 1px solid #dbe1e8;
+}
+
+.content-header h1 {
+    margin: 0;
+    font-size: 26px;
+    line-height: 32px;
+}
+
+.header-section h1 i {
+    font-size: 56px;
+    float: right;
+    margin: 2px 0 0 10px;
+    color: #eaedf1;
+    margin: 0 0 0 10px;
+    line-height: 64px;
+}
+
+.header-section {
+    padding: 30px 10px;
+}
+
+.content-header {
+    margin: -10px -5px 10px;
+}
+
+/* Blocks */
+.block {
+    margin: 0 0 10px;
+    padding: 20px 15px 1px;
+    background-color: #ffffff;
+    border: 1px solid #dbe1e8;
+}
+
+.block-title {
+    margin: -20px -15px 20px;
+    background-color: #f9fafc;
+    border-bottom: 1px solid #eaedf1;
+}
+
+.block-title h2 {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 10px 16px 7px;
+    font-weight: normal;
+}
+
+.block-title h2 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Widgets */
+
+/* Link Widgets */
+
+/* Content which contains floats */
+
+/* Draggable Blocks */
+
+/* Scroll to top link */
+
+/*
+=================================================================
+(#m05pgs) PAGES
+=================================================================
+*/
+
+/* Login */
+
+/* Full Background Image */
+
+/* Full Page Container */
+
+/* Countdown */
+
+/* Calendar */
+
+/* Gallery */
+
+/* Media Items */
+
+/* Charts */
+
+/* Timeline */
+
+/* Error */
+
+/* Pricing Table */
+
+/* Chat UI */
+
+/* Tasks */
+
+/*
+=================================================================
+(#m06bos) BOOTSTRAP OVERWRITE/EXTEND STYLES
+=================================================================
+*/
+
+/* Navbar */
+.navbar.navbar-default {
+    background-color: #f9fafc;
+}
+
+/* Typography */
+h1, h2 {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+a,
+a:hover,
+a:focus {
+    color: #1bbae1;
+}
+
+.text-danger,
+.text-danger:hover {
+    color: #e74c3c;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+ul {
+    padding-left: 30px;
+}
+
+/* Forms */
+
+.form-bordered {
+    margin: -15px -15px -1px;
+}
+
+.form-bordered .form-group {
+    margin: 0;
+    border: none;
+    padding: 15px;
+    border-bottom: 1px dashed #eaedf1;
+}
+
+.form-horizontal.form-bordered .form-group {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Form Wizards */
+
+/* Form Select Switches */
+
+/* Tables */
+
+/* List Group */
+
+/* Navs */
+
+.nav > li i {
+    font-size: 14px;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+    background-color: #f9fafc;
+}
+
+/* Horizontal Navigation */
+
+/* Popover */
+
+/* Tooltip */
+
+/* Breadcrumps */
+
+/* Progress Bars */
+
+/* Modals */
+
+/* Buttons */
+
+/* Panels */
+
+/* Pre, Code */
+
+/* Alerts */
+
+/* Alternative Alerts */
+
+/* Labels, Badges */
+
+/* Carousel */
+
+/* Bottom Margin */
+
+/* Removing shadows and radius */
+
+.navbar {
+    border-radius: 0;
+}
+
+/*
+=================================================================
+(#m07hes) HELPERS
+=================================================================
+*/
+
+:focus {
+    outline: 0 !important;
+}
+
+/*
+=================================================================
+(#m08ths) THEMES
+=================================================================
+*/
+
+/* Alternative Main Style */
+
+/* Test Circle used in Color Themes Page */
+
+/* Default Color Theme specific colors */
+
+/* Contextual Background Colors */
+
+/*
+=================================================================
+(#m09res) RESPONSIVE
+=================================================================
+*/
+
+/* Small devices, Tablets (>767px) */
+@media screen and (min-width: 768px) {
+
+    /* General */
+
+    #page-content {
+        padding: 20px 20px 1px;
+    }
+
+    .header-section,
+    .block,
+    #page-content + footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .content-header {
+        margin: -20px -20px 20px;
+    }
+
+    .block {
+        margin-bottom: 20px;
+    }
+
+    .block-title {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    /* Forms */
+    .form-bordered {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .form-bordered .form-group {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .form-horizontal.form-bordered .form-group {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    /* Tabs */
+
+    /* Chat UI */
+}
+
+/* Medium devices, Desktops (>991px) */
+@media screen and (min-width: 992px) {
+
+    /* General */
+
+    /* Sidebar Animations */
+
+    /* Reset sidebar classes used only on small screens */
+
+    /* Both Sidebars */
+
+    /* Main Sidebar */
+
+    /* Alternative Sidebar */
+
+    /* Main Sidebar - Mini mode */
+
+    /* Nav Horizontal */
+}
+
+/* Large devices, Desktops (>1199px) */
+@media screen and (min-width: 1200px) {
+
+    /* Main Layout */
+
+    /* General */
+}
+
+/*
+=================================================================
+(#m10rts) RETINA
+=================================================================
+*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+    /* If you did use a CSS image background, you can put your high resolution image here */
+
+}
+
+/*
+=================================================================
+(#m11prs) PRINT
+=================================================================
+*/
+
+@media print {
+    .content-header, #page-content + footer {display: none !important;}
+    #page-content {min-height: 0 !important; height: auto !important; padding: 0 !important;}
+    .block {border: none !important; padding: 0 !important;}
+    .block-title {margin: 0 0 20px !important;}
+}
+/*
+ *  Document   : themes.css
+ *  Author     : pixelcave
+ *  Description: The themes stylesheet of the template. The classes can be used to
+ *  alter the text, the background or the border color of an element individually
+ *
+ */
+
+/*
+=================================================================
+THEME DEFAULT
+=================================================================
+*/
+
+/*
+=================================================================
+THEME NIGHT
+=================================================================
+*/
+
+/*
+=================================================================
+THEME AMETHYST
+=================================================================
+*/
+
+/*
+=================================================================
+THEME MODERN
+=================================================================
+*/
+
+/*
+=================================================================
+THEME AUTUMN
+=================================================================
+*/
+
+/*
+=================================================================
+THEME FLATIE
+=================================================================
+*/
+
+/*
+=================================================================
+THEME SPRING
+=================================================================
+*/
+
+/*
+=================================================================
+THEME FANCY
+=================================================================
+*/
+
+/*
+=================================================================
+THEME FIRE
+=================================================================
+*/
+
+/*
+=================================================================
+THEME CORAL
+=================================================================
+*/
+
+/*
+=================================================================
+THEME LAKE
+=================================================================
+*/
+
+/*
+=================================================================
+THEME FOREST
+=================================================================
+*/
+
+/*
+=================================================================
+THEME WATERLILY
+=================================================================
+*/
+
+/*
+=================================================================
+THEME EMERALD
+=================================================================
+*/
+
+
+/*
+=================================================================
+THEME BLACKBERRY
+=================================================================
+*/
+@media (min-width: 768px)
+{
+     .col-sm-3 { width: 50%;  }
+
+}
+@media (min-width: 850px)
+{
+     .col-sm-3 { width: 30%; }
+
+}
+@media (min-width: 1000px)
+{
+     .col-sm-3 { width: 25%; }
+
+}
+
+
+/*==========back to top=======*/

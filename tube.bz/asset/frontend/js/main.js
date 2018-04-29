@@ -311,10 +311,10 @@ function linkInitSearch(lang, vm, algo_index) {
         var search_value = $search_field.val();
         if (search_value.length > 1) {
             if (clicked_link) {
-                _gaq.push(['_trackPageview', '?q=' + search_value]);
-                _gaq.push(['_trackEvent', 'happy search', 'search', search_value]);
+                //_gaq.push(['_trackPageview', '?q=' + search_value]);
+                //_gaq.push(['_trackEvent', 'happy search', 'search', search_value]);
             } else {
-                _gaq.push(['_trackEvent', 'sad search', 'search', search_value]);
+               // _gaq.push(['_trackEvent', 'sad search', 'search', search_value]);
             }
             clicked_link = false;
         }

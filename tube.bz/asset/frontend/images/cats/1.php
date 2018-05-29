@@ -1,5 +1,5 @@
 <?php
-	
+exit;
 for($i=1;$i<=60;$i++)
 {
 	$file = "cat".$i.".png";

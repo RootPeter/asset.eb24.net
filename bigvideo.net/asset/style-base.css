@@ -379,6 +379,7 @@ a.report:after {
     -moz-osx-font-smoothing: grayscale;
     content: '\e803';   
 }
+
 .vpbtn {
     display: block;
     position: absolute;
